@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321B54C121A2D173004225B6 /* WGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B54C021A2D173004225B6 /* WGFirstViewController.m */; };
+		321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */; };
+		321B54C721A2D1CA004225B6 /* WGFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B54C621A2D1CA004225B6 /* WGFirstModel.m */; };
+		321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B54C921A2D1E4004225B6 /* WGFirstViewModel.m */; };
 		32577F8A2170844400477C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F892170844400477C0A /* AppDelegate.m */; };
 		32577F8D2170844400477C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F8C2170844400477C0A /* ViewController.m */; };
-		32577F902170844400477C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32577F8E2170844400477C0A /* Main.storyboard */; };
 		32577F922170844600477C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32577F912170844600477C0A /* Assets.xcassets */; };
 		32577F952170844600477C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32577F932170844600477C0A /* LaunchScreen.storyboard */; };
 		32577F982170844600477C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F972170844600477C0A /* main.m */; };
 		32577FA22170844600477C0A /* WGMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FA12170844600477C0A /* WGMVVMTests.m */; };
 		32577FAD2170844600477C0A /* WGMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FAC2170844600477C0A /* WGMVVMUITests.m */; };
+		32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5B1621A427DF0085FE61 /* WGFirstView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321B54BF21A2D173004225B6 /* WGFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstViewController.h; sourceTree = "<group>"; };
+		321B54C021A2D173004225B6 /* WGFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstViewController.m; sourceTree = "<group>"; };
+		321B54C221A2D1A0004225B6 /* WGBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBaseViewModel.h; sourceTree = "<group>"; };
+		321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBaseViewModel.m; sourceTree = "<group>"; };
+		321B54C521A2D1CA004225B6 /* WGFirstModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstModel.h; sourceTree = "<group>"; };
+		321B54C621A2D1CA004225B6 /* WGFirstModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstModel.m; sourceTree = "<group>"; };
+		321B54C821A2D1E4004225B6 /* WGFirstViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstViewModel.h; sourceTree = "<group>"; };
+		321B54C921A2D1E4004225B6 /* WGFirstViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstViewModel.m; sourceTree = "<group>"; };
 		32577F852170844400477C0A /* WGMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577F882170844400477C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32577F892170844400477C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32577F8B2170844400477C0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		32577F8C2170844400477C0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		32577F8F2170844400477C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32577F912170844600477C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32577F942170844600477C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32577F962170844600477C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +62,8 @@
 		32577FA82170844600477C0A /* WGMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577FAC2170844600477C0A /* WGMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMVVMUITests.m; sourceTree = "<group>"; };
 		32577FAE2170844600477C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EE5B1521A427DF0085FE61 /* WGFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstView.h; sourceTree = "<group>"; };
+		32EE5B1621A427DF0085FE61 /* WGFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321B54BE21A2D14E004225B6 /* File01 */ = {
+			isa = PBXGroup;
+			children = (
+				321B54BF21A2D173004225B6 /* WGFirstViewController.h */,
+				321B54C021A2D173004225B6 /* WGFirstViewController.m */,
+				321B54C521A2D1CA004225B6 /* WGFirstModel.h */,
+				321B54C621A2D1CA004225B6 /* WGFirstModel.m */,
+				321B54C821A2D1E4004225B6 /* WGFirstViewModel.h */,
+				321B54C921A2D1E4004225B6 /* WGFirstViewModel.m */,
+				32EE5B1521A427DF0085FE61 /* WGFirstView.h */,
+				32EE5B1621A427DF0085FE61 /* WGFirstView.m */,
+			);
+			path = File01;
+			sourceTree = "<group>";
+		};
 		32577F7C2170844400477C0A = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +129,13 @@
 		32577F872170844400477C0A /* WGMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				321B54BE21A2D14E004225B6 /* File01 */,
 				32577F882170844400477C0A /* AppDelegate.h */,
 				32577F892170844400477C0A /* AppDelegate.m */,
 				32577F8B2170844400477C0A /* ViewController.h */,
 				32577F8C2170844400477C0A /* ViewController.m */,
-				32577F8E2170844400477C0A /* Main.storyboard */,
+				321B54C221A2D1A0004225B6 /* WGBaseViewModel.h */,
+				321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */,
 				32577F912170844600477C0A /* Assets.xcassets */,
 				32577F932170844600477C0A /* LaunchScreen.storyboard */,
 				32577F962170844600477C0A /* Info.plist */,
@@ -237,7 +267,6 @@
 			files = (
 				32577F952170844600477C0A /* LaunchScreen.storyboard in Resources */,
 				32577F922170844600477C0A /* Assets.xcassets in Resources */,
-				32577F902170844400477C0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321B54C721A2D1CA004225B6 /* WGFirstModel.m in Sources */,
+				32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */,
 				32577F8D2170844400477C0A /* ViewController.m in Sources */,
+				321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */,
 				32577F982170844600477C0A /* main.m in Sources */,
 				32577F8A2170844400477C0A /* AppDelegate.m in Sources */,
+				321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */,
+				321B54C121A2D173004225B6 /* WGFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32577F8E2170844400477C0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32577F8F2170844400477C0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32577F932170844600477C0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
