@@ -1,0 +1,6 @@
+module Pods_WGMVVM {
+  umbrella header "Pods-WGMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

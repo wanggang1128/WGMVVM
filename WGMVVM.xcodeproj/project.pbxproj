@@ -19,6 +19,7 @@
 		32577FA22170844600477C0A /* WGMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FA12170844600477C0A /* WGMVVMTests.m */; };
 		32577FAD2170844600477C0A /* WGMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FAC2170844600477C0A /* WGMVVMUITests.m */; };
 		32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5B1621A427DF0085FE61 /* WGFirstView.m */; };
+		576CE5D403FFE0E1198CE9D2 /* libPods-WGMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,9 @@
 		32577FAE2170844600477C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32EE5B1521A427DF0085FE61 /* WGFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstView.h; sourceTree = "<group>"; };
 		32EE5B1621A427DF0085FE61 /* WGFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstView.m; sourceTree = "<group>"; };
+		8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79B5F0E653558AEAFAF24B2 /* Pods-WGMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WGMVVM/Pods-WGMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FD68853BC914522A7815AD /* Pods-WGMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGMVVM/Pods-WGMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576CE5D403FFE0E1198CE9D2 /* libPods-WGMVVM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C182499A14223AEFA91AFEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D79B5F0E653558AEAFAF24B2 /* Pods-WGMVVM.debug.xcconfig */,
+				F0FD68853BC914522A7815AD /* Pods-WGMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		321B54BE21A2D14E004225B6 /* File01 */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +127,8 @@
 				32577FA02170844600477C0A /* WGMVVMTests */,
 				32577FAB2170844600477C0A /* WGMVVMUITests */,
 				32577F862170844400477C0A /* Products */,
+				2C182499A14223AEFA91AFEA /* Pods */,
+				F9F3D6B343CD00A3C5C51165 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +178,14 @@
 			path = WGMVVMUITests;
 			sourceTree = "<group>";
 		};
+		F9F3D6B343CD00A3C5C51165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32577FB12170844600477C0A /* Build configuration list for PBXNativeTarget "WGMVVM" */;
 			buildPhases = (
+				C2572C7F598992BAFD2B741A /* [CP] Check Pods Manifest.lock */,
 				32577F812170844400477C0A /* Sources */,
 				32577F822170844400477C0A /* Frameworks */,
 				32577F832170844400477C0A /* Resources */,
@@ -285,6 +310,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2572C7F598992BAFD2B741A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WGMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32577F812170844400477C0A /* Sources */ = {
@@ -459,6 +509,7 @@
 		};
 		32577FB22170844600477C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79B5F0E653558AEAFAF24B2 /* Pods-WGMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +527,7 @@
 		};
 		32577FB32170844600477C0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0FD68853BC914522A7815AD /* Pods-WGMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
