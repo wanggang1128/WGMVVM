@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "WGFirstViewController.h"
+#import "WGRACViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
 
 @end
 
@@ -23,7 +26,6 @@
     self.title = @"ViewController";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -31,20 +33,38 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return self.dataArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    cell.textLabel.text = @"111";
+    cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    WGFirstViewController *vc = [[WGFirstViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    switch (indexPath.row) {
+        case 0:{
+            WGFirstViewController *vc = [[WGFirstViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }case 1:{
+            WGRACViewController *vc = [[WGRACViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc] initWithObjects:@"demo01", @"RAC学习", nil];
+    }
+    return _dataArray;
 }
 
 -(UITableView *)tableView{
