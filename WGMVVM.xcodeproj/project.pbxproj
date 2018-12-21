@@ -13,6 +13,9 @@
 		321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B54C921A2D1E4004225B6 /* WGFirstViewModel.m */; };
 		3233104421CA3C240067256F /* WGRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104321CA3C240067256F /* WGRACViewController.m */; };
 		3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104621CA44570067256F /* WGRACTwoViewController.m */; };
+		3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104A21CCD9C00067256F /* WGLoginViewController.m */; };
+		3233104E21CCDBDB0067256F /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104D21CCDBDB0067256F /* AccountModel.m */; };
+		3233105121CCDC210067256F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105021CCDC210067256F /* LoginViewModel.m */; };
 		32577F8A2170844400477C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F892170844400477C0A /* AppDelegate.m */; };
 		32577F8D2170844400477C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F8C2170844400477C0A /* ViewController.m */; };
 		32577F922170844600477C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32577F912170844600477C0A /* Assets.xcassets */; };
@@ -54,6 +57,12 @@
 		3233104321CA3C240067256F /* WGRACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGRACViewController.m; sourceTree = "<group>"; };
 		3233104521CA44570067256F /* WGRACTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGRACTwoViewController.h; sourceTree = "<group>"; };
 		3233104621CA44570067256F /* WGRACTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGRACTwoViewController.m; sourceTree = "<group>"; };
+		3233104921CCD9C00067256F /* WGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginViewController.h; sourceTree = "<group>"; };
+		3233104A21CCD9C00067256F /* WGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLoginViewController.m; sourceTree = "<group>"; };
+		3233104C21CCDBDB0067256F /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		3233104D21CCDBDB0067256F /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		3233104F21CCDC210067256F /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		3233105021CCDC210067256F /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		32577F852170844400477C0A /* WGMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577F882170844400477C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32577F892170844400477C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +146,19 @@
 			path = RACLearn;
 			sourceTree = "<group>";
 		};
+		3233104821CCD83B0067256F /* LoginFile */ = {
+			isa = PBXGroup;
+			children = (
+				3233104921CCD9C00067256F /* WGLoginViewController.h */,
+				3233104A21CCD9C00067256F /* WGLoginViewController.m */,
+				3233104C21CCDBDB0067256F /* AccountModel.h */,
+				3233104D21CCDBDB0067256F /* AccountModel.m */,
+				3233104F21CCDC210067256F /* LoginViewModel.h */,
+				3233105021CCDC210067256F /* LoginViewModel.m */,
+			);
+			path = LoginFile;
+			sourceTree = "<group>";
+		};
 		32577F7C2170844400477C0A = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +184,7 @@
 		32577F872170844400477C0A /* WGMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				3233104821CCD83B0067256F /* LoginFile */,
 				3233104121CA3C010067256F /* RACLearn */,
 				321B54BE21A2D14E004225B6 /* File01 */,
 				32577F882170844400477C0A /* AppDelegate.h */,
@@ -361,6 +384,9 @@
 			files = (
 				321B54C721A2D1CA004225B6 /* WGFirstModel.m in Sources */,
 				32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */,
+				3233105121CCDC210067256F /* LoginViewModel.m in Sources */,
+				3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */,
+				3233104E21CCDBDB0067256F /* AccountModel.m in Sources */,
 				32577F8D2170844400477C0A /* ViewController.m in Sources */,
 				321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */,
 				3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */,

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "WGFirstViewController.h"
 #import "WGRACViewController.h"
+#import "WGLoginViewController.h"
+
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -54,6 +56,10 @@
             WGRACViewController *vc = [[WGRACViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
+        }case 2:{
+            WGLoginViewController *vc = [[WGLoginViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         default:
             break;
@@ -62,7 +68,7 @@
 
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = [[NSMutableArray alloc] initWithObjects:@"demo01", @"RAC学习", nil];
+        _dataArray = [[NSMutableArray alloc] initWithObjects:@"demo01", @"RAC学习",@"登录功能", nil];
     }
     return _dataArray;
 }
