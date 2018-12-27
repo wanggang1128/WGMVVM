@@ -68,7 +68,7 @@
 
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = [[NSMutableArray alloc] initWithObjects:@"demo01", @"RAC学习",@"登录功能", nil];
+        _dataArray = [[NSMutableArray alloc] initWithObjects:@"File01", @"RACLearn",@"LoginFile", nil];
     }
     return _dataArray;
 }

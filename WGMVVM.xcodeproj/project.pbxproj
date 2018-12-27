@@ -16,6 +16,7 @@
 		3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104A21CCD9C00067256F /* WGLoginViewController.m */; };
 		3233104E21CCDBDB0067256F /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104D21CCDBDB0067256F /* AccountModel.m */; };
 		3233105121CCDC210067256F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105021CCDC210067256F /* LoginViewModel.m */; };
+		3233105421CCE7830067256F /* MBProgressHUD+ShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */; };
 		32577F8A2170844400477C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F892170844400477C0A /* AppDelegate.m */; };
 		32577F8D2170844400477C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F8C2170844400477C0A /* ViewController.m */; };
 		32577F922170844600477C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32577F912170844600477C0A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		32577F982170844600477C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F972170844600477C0A /* main.m */; };
 		32577FA22170844600477C0A /* WGMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FA12170844600477C0A /* WGMVVMTests.m */; };
 		32577FAD2170844600477C0A /* WGMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FAC2170844600477C0A /* WGMVVMUITests.m */; };
+		326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */; };
 		32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5B1621A427DF0085FE61 /* WGFirstView.m */; };
 		576CE5D403FFE0E1198CE9D2 /* libPods-WGMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		3233104D21CCDBDB0067256F /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		3233104F21CCDC210067256F /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		3233105021CCDC210067256F /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowMessage.h"; sourceTree = "<group>"; };
+		3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowMessage.m"; sourceTree = "<group>"; };
 		32577F852170844400477C0A /* WGMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577F882170844400477C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32577F892170844400477C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		32577FA82170844600477C0A /* WGMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577FAC2170844600477C0A /* WGMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMVVMUITests.m; sourceTree = "<group>"; };
 		32577FAE2170844600477C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginTwoViewController.h; sourceTree = "<group>"; };
+		326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLoginTwoViewController.m; sourceTree = "<group>"; };
 		32EE5B1521A427DF0085FE61 /* WGFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstView.h; sourceTree = "<group>"; };
 		32EE5B1621A427DF0085FE61 /* WGFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstView.m; sourceTree = "<group>"; };
 		8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +157,8 @@
 			children = (
 				3233104921CCD9C00067256F /* WGLoginViewController.h */,
 				3233104A21CCD9C00067256F /* WGLoginViewController.m */,
+				326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */,
+				326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */,
 				3233104C21CCDBDB0067256F /* AccountModel.h */,
 				3233104D21CCDBDB0067256F /* AccountModel.m */,
 				3233104F21CCDC210067256F /* LoginViewModel.h */,
@@ -193,6 +201,8 @@
 				32577F8C2170844400477C0A /* ViewController.m */,
 				321B54C221A2D1A0004225B6 /* WGBaseViewModel.h */,
 				321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */,
+				3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */,
+				3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */,
 				32577F912170844600477C0A /* Assets.xcassets */,
 				32577F932170844600477C0A /* LaunchScreen.storyboard */,
 				32577F962170844600477C0A /* Info.plist */,
@@ -391,9 +401,11 @@
 				321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */,
 				3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */,
 				32577F982170844600477C0A /* main.m in Sources */,
+				326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */,
 				32577F8A2170844400477C0A /* AppDelegate.m in Sources */,
 				321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */,
 				3233104421CA3C240067256F /* WGRACViewController.m in Sources */,
+				3233105421CCE7830067256F /* MBProgressHUD+ShowMessage.m in Sources */,
 				321B54C121A2D173004225B6 /* WGFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

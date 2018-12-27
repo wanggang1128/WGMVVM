@@ -11,9 +11,11 @@
 #define SCREEN_Width  [[UIScreen mainScreen] bounds].size.width
 
 #import "WGLoginViewController.h"
+#import "WGLoginTwoViewController.h"
 #import "LoginViewModel.h"
 #import <ReactiveObjC.h>
-
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+ShowMessage.h"
 
 @interface WGLoginViewController ()
 
@@ -54,6 +56,41 @@
         
         // 执行登录事件
         [self.loginViewModel.LoginCommand execute:nil];
+    }];
+    
+    // 监听登录状态
+    [[self.loginViewModel.LoginCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable x) {
+        if ([x isEqualToNumber:@(YES)]) {
+            
+            // 正在登录...
+            // 用蒙版提示
+            [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+        }else
+        {
+            // 登录完成
+            // 隐藏蒙版
+            
+            [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
+        }
+    }];
+    
+    // 监听登录产生的数据
+    [self.loginViewModel.LoginCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        
+        [self.accountField resignFirstResponder];
+        [self.pwdField resignFirstResponder];
+        
+        if ([x isEqualToString:@"登录成功"]) {
+            
+            WGLoginTwoViewController *vc = [[WGLoginTwoViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            [[UIApplication sharedApplication] delegate].window.rootViewController = nav;
+            [[UIApplication sharedApplication].delegate.window makeKeyWindow];
+            
+        }else{
+            
+        }
+        
     }];
 }
 

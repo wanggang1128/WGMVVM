@@ -37,7 +37,7 @@
         RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             
             // 模仿网络延迟
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 
                 [subscriber sendNext:@"登录成功"];
                 
@@ -48,29 +48,6 @@
             return nil;
         }];
         return signal;
-    }];
-    
-    // 监听登录产生的数据
-    [_LoginCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
-        
-        if ([x isEqualToString:@"登录成功"]) {
-            NSLog(@"登录成功");
-        }
-    }];
-    
-    // 监听登录状态
-    [[_LoginCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable x) {
-        if ([x isEqualToNumber:@(YES)]) {
-            
-            // 正在登录ing...
-            // 用蒙版提示
-            NSLog(@"正在登陆...");
-        }else
-        {
-            // 登录成功
-            // 隐藏蒙版
-            NSLog(@"登陆成功");;
-        }
     }];
 }
 
