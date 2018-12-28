@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "WGNewLoginViewModel.h"
-#import "WGNewLoginViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -62,11 +60,7 @@
         }
         case 3:{
             
-//            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGNewLoginViewController"];
-            
-            WGNewLoginViewModel *loginViewModel = [WGNewLoginViewModel loginViewModelWithUser:[WGUser userWithService:[[WGServices alloc] init] userModel:[WGUserModel userModelWithUsername:@"Jiuchabaikaishui" password:@"123456" logined:NO]]];
-            WGNewLoginViewController *loginC = [[WGNewLoginViewController alloc] initWithLoginViewModel:loginViewModel];
-            [self.navigationController pushViewController:loginC animated:NO];
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGNewLoginViewController"];
             
             break;
         }

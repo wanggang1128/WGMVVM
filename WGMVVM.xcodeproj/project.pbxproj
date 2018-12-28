@@ -17,6 +17,8 @@
 		3233104E21CCDBDB0067256F /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104D21CCDBDB0067256F /* AccountModel.m */; };
 		3233105121CCDC210067256F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105021CCDC210067256F /* LoginViewModel.m */; };
 		3233105421CCE7830067256F /* MBProgressHUD+ShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */; };
+		3251257921D6083300B0888A /* WGHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251257821D6083300B0888A /* WGHomeViewModel.m */; };
+		3251257C21D6146100B0888A /* WGHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251257B21D6146100B0888A /* WGHomeModel.m */; };
 		32577F8A2170844400477C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F892170844400477C0A /* AppDelegate.m */; };
 		32577F8D2170844400477C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F8C2170844400477C0A /* ViewController.m */; };
 		32577F922170844600477C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32577F912170844600477C0A /* Assets.xcassets */; };
@@ -77,6 +79,10 @@
 		3233105021CCDC210067256F /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowMessage.h"; sourceTree = "<group>"; };
 		3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowMessage.m"; sourceTree = "<group>"; };
+		3251257721D6083300B0888A /* WGHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHomeViewModel.h; sourceTree = "<group>"; };
+		3251257821D6083300B0888A /* WGHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHomeViewModel.m; sourceTree = "<group>"; };
+		3251257A21D6146100B0888A /* WGHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHomeModel.h; sourceTree = "<group>"; };
+		3251257B21D6146100B0888A /* WGHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHomeModel.m; sourceTree = "<group>"; };
 		32577F852170844400477C0A /* WGMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577F882170844400477C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32577F892170844400477C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -187,8 +193,6 @@
 			children = (
 				3233104921CCD9C00067256F /* WGLoginViewController.h */,
 				3233104A21CCD9C00067256F /* WGLoginViewController.m */,
-				326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */,
-				326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */,
 				3233104C21CCDBDB0067256F /* AccountModel.h */,
 				3233104D21CCDBDB0067256F /* AccountModel.m */,
 				3233104F21CCDC210067256F /* LoginViewModel.h */,
@@ -287,6 +291,8 @@
 				326DA6A921D4C747004D00E8 /* WGUserModel.m */,
 				326DA6B621D4DD2F004D00E8 /* WGUser.h */,
 				326DA6B721D4DD2F004D00E8 /* WGUser.m */,
+				3251257A21D6146100B0888A /* WGHomeModel.h */,
+				3251257B21D6146100B0888A /* WGHomeModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 			children = (
 				326DA6A321D4BB3D004D00E8 /* WGNewLoginViewController.h */,
 				326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */,
+				326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */,
+				326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +320,8 @@
 			children = (
 				325784B021D4EA46000E512A /* WGNewLoginViewModel.h */,
 				325784B121D4EA46000E512A /* WGNewLoginViewModel.m */,
+				3251257721D6083300B0888A /* WGHomeViewModel.h */,
+				3251257821D6083300B0888A /* WGHomeViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -515,12 +525,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3251257C21D6146100B0888A /* WGHomeModel.m in Sources */,
 				321B54C721A2D1CA004225B6 /* WGFirstModel.m in Sources */,
 				326DA6B221D4CC25004D00E8 /* WGServices.m in Sources */,
 				32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */,
 				325784B221D4EA46000E512A /* WGNewLoginViewModel.m in Sources */,
 				3233105121CCDC210067256F /* LoginViewModel.m in Sources */,
 				326DA6B821D4DD2F004D00E8 /* WGUser.m in Sources */,
+				3251257921D6083300B0888A /* WGHomeViewModel.m in Sources */,
 				3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */,
 				325784AF21D4E543000E512A /* WGResultModel.m in Sources */,
 				325784B721D4F104000E512A /* LoadingTool.m in Sources */,

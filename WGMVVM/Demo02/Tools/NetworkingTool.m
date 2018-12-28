@@ -29,7 +29,7 @@ static FMDatabaseQueue *_databaseQueue;
             FMResultSet *set = [db executeQuery:[NSString stringWithFormat:@"SELECT COUNT(*) FROM %@;", K_User_TableName]];
             [set next];
             if ([set intForColumnIndex:0] == 0) {
-                if (![db executeUpdate:[NSString stringWithFormat:@"INSERT INTO %@ (name, password) VALUES (?, ?);", K_User_TableName], @"Jiuchabaikaishui", @"123456"]) {
+                if (![db executeUpdate:[NSString stringWithFormat:@"INSERT INTO %@ (name, password) VALUES (?, ?);", K_User_TableName], @"hanjiang", @"123456"]) {
                     NSLog(@"用户添加失败");
                 }
             }
@@ -72,42 +72,27 @@ static FMDatabaseQueue *_databaseQueue;
                 if ([path isEqualToString:K_Service_Login]) {
                     FMResultSet *set = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM %@ WHERE name = ?;", K_User_TableName], parameters[@"userName"]];
                     if ([set next]) {
-                        NSString *name = [set stringForColumn:@"name"];
                         NSString *password = [set stringForColumn:@"password"];
-                        if ([parameters[@"userName"] isEqualToString:@"Jiuchabaikaishu"]) {//用账号Jiuchabaikaishu模拟网络请求失败
-                            completion(NO, @"请求失败", nil);
+                        if ([password isEqualToString:parameters[@"passWord"]]) {
+                            completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(0), @"message": @"登录成功"});
                         } else {
-                            if ([name isEqualToString:parameters[@"userName"]]) {
-                                if ([password isEqualToString:parameters[@"passWord"]]) {
-                                    completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(0), @"message": @"登录成功"});
-                                } else {
-                                    completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(1), @"message": @"密码错误"});
-                                }
-                            } else {
-                                completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(2), @"message": @"账号不存在"});
-                            }
-                            
+                            completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(1), @"message": @"密码错误"});
                         }
+                    }else{
+                        completion(NO, @"账号不存在", nil);
                     }
                 }
                 if ([path isEqualToString:K_Service_Logout]) {
                     FMResultSet *set = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM %@ WHERE name = ?;", K_User_TableName], parameters[@"userName"]];
                     if ([set next]) {
-                        NSString *name = [set stringForColumn:@"name"];
                         NSString *password = [set stringForColumn:@"password"];
-                        if ([parameters[@"userName"] isEqualToString:@"Jiuchabaikaishu"]) {//用账号Jiuchabaikaishu模拟网络请求失败
-                            completion(NO, @"请求失败", nil);
+                        if ([password isEqualToString:parameters[@"passWord"]]) {
+                            completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(0), @"message": @"退出成功"});
                         } else {
-                            if ([name isEqualToString:parameters[@"userName"]]) {
-                                if ([password isEqualToString:parameters[@"passWord"]]) {
-                                    completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(0), @"message": @"退出成功"});
-                                } else {
-                                    completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(1), @"message": @"密码错误"});
-                                }
-                            } else {
-                                completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(2), @"message": @"账号不存在"});
-                            }
+                            completion(YES, @"请求成功", @{@"userName": parameters[@"userName"], @"passWord": parameters[@"passWord"], @"code": @(1), @"message": @"密码错误"});
                         }
+                    }else{
+                        completion(NO, @"账号不存在", nil);
                     }
                 }
                 if ([path isEqualToString:K_Service_PageFriends]) {

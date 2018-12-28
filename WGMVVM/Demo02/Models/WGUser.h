@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithService:(WGServices *)service userModel:(WGUserModel *)userModel;
 
 - (RACSignal *)loginSignal;
+- (RACSignal *)logoutSignal;
 
 @end
 

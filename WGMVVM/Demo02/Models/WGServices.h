@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 //登录
 - (RACSignal *)loginSignal:(NSString *)userName passWord:(NSString *)passWord;
 
+//登出
+- (RACSignal *)logoutSignal:(NSString *)userName passWord:(NSString *)passWord;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -30,4 +30,24 @@
     return signal;
 }
 
+//登出
+- (RACSignal *)logoutSignal:(NSString *)userName passWord:(NSString *)passWord{
+    
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        
+        //调登出接口
+        [NetworkingTool postWithPath:K_Service_Logout parameters:@{@"userName": userName, @"passWord": passWord} completion:^(BOOL success, NSString *message, id responseObject) {
+            
+            [subscriber sendNext:[WGResult resultWithSuccess:success message:message responseObject:responseObject]];
+            [subscriber sendCompleted];
+
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{
+            //登出后的对应处理
+        }];
+        
+    }];
+}
+
 @end

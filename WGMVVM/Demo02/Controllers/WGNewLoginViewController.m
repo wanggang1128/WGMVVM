@@ -20,22 +20,12 @@
 
 @implementation WGNewLoginViewController
 
-//-(instancetype)init{
-//    self = [super init];
-//    if (self) {
-////        WGUserModel *userMod = [WGUserModel userModelWithUsername:@"Jiuchabaikaishui" password:@"123456" logined:NO];
-//
-//        self.viewModel = [WGNewLoginViewModel loginViewModelWithUser:[WGUser userWithService:[[WGServices alloc] init] userModel:[WGUserModel userModelWithUsername:@"Jiuchabaikaishui" password:@"123456" logined:NO]]];
+//-(instancetype)initWithLoginViewModel:(WGNewLoginViewModel *)viewModel{
+//    if (self = [super init]) {
+//        self.viewModel = viewModel;
 //    }
 //    return self;
 //}
-
--(instancetype)initWithLoginViewModel:(WGNewLoginViewModel *)viewModel{
-    if (self = [super init]) {
-        self.viewModel = viewModel;
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -80,6 +70,7 @@
         }
     }];
     
+    //订阅信号,接收收据
     [self.viewModel.loginCommand.executionSignals.switchToLatest subscribeNext:^(WGResultModel *model) {
 
         @strongify(self)
@@ -89,11 +80,11 @@
 
         if (model.success) {
 
-            UIViewController *vc = [[WGControllerPush WGControllerPushShare] getViewControllerWithConName:@"WGLoginTwoViewController" paramType:WGPushNoParam param:nil];
+            UIViewController *vc = [[WGControllerPush WGControllerPushShare] getViewControllerWithConName:@"WGLoginTwoViewController" paramType:WGPushProperty param:@{@"property":@{@"user":self.viewModel.user}}];
             [UIApplication sharedApplication].delegate.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
             [[UIApplication sharedApplication].delegate.window makeKeyWindow];
         } else {
-            [LoadingTool showMessage:model.message toView:self.view];
+            [LoadingTool showMessage:model.message toView:[UIApplication sharedApplication].keyWindow];
         }
     }];
 }
@@ -124,13 +115,12 @@
     return _loginBtn;
 }
 
-//- (WGNewLoginViewModel *)viewModel{
-//    if (!_viewModel) {
-//        WGUserModel *userMod = [WGUserModel userModelWithUsername:@"Jiuchabaikaishui" password:@"123456" logined:NO];
-//
-//        _viewModel = [WGNewLoginViewModel loginViewModelWithUser:[WGUser userWithService:[[WGServices alloc] init] userModel:userMod]];
-//    }
-//    return _viewModel;
-//}
+- (WGNewLoginViewModel *)viewModel{
+    if (!_viewModel) {
+
+        _viewModel = [WGNewLoginViewModel loginViewModelWithUser:[WGUser userWithService:[[WGServices alloc] init] userModel:[WGUserModel userModelWithUsername:@"hanjiang" password:@"123456" logined:NO]]];
+    }
+    return _viewModel;
+}
 
 @end

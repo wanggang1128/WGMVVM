@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WGHomeModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WGLoginTwoViewController : UIViewController
+
+@property (nonatomic, strong) WGUser *user;
 
 @end
 

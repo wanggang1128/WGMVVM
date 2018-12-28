@@ -1,25 +1,21 @@
 //
-//  WGNewLoginViewModel.h
+//  WGHomeModel.h
 //  WGMVVM
 //
-//  Created by wanggang on 2018/12/27.
+//  Created by wanggang on 2018/12/28.
 //  Copyright © 2018 wanggang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "WGUser.h"
 
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGNewLoginViewModel : NSObject
+@interface WGHomeModel : NSObject
 
 @property (nonatomic, strong) WGUser *user;
-@property (nonatomic, strong) RACCommand *loginCommand;
 
-
-+ (instancetype)loginViewModelWithUser:(WGUser *)user;
-
++ (instancetype)homeWithWGUser:(WGUser *)user;
 - (instancetype)initWithWGUser:(WGUser *)user;
 
 @end

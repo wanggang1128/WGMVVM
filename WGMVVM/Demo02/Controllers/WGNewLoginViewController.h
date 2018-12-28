@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WGNewLoginViewController : UIViewController
 
-- (instancetype)initWithLoginViewModel:(WGNewLoginViewModel *)viewModel;
+//- (instancetype)initWithLoginViewModel:(WGNewLoginViewModel *)viewModel;
 
 @end
 

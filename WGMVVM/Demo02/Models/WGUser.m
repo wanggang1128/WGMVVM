@@ -25,6 +25,7 @@
     return self;
 }
 
+//登录
 - (RACSignal *)loginSignal{
     
     return [[self.service loginSignal:self.userModel.userName passWord:self.userModel.passWord] map:^id _Nullable(WGResult *result) {
@@ -34,6 +35,18 @@
         //转为模型数据
         return [WGResultModel resultWithSuccess:result.success?[result.responseObject[@"code"] integerValue] == 0 : result.success message:result.success?result.responseObject[@"message"] : result.message dataModel:[WGUser userWithService:self.service userModel:[WGUserModel userModelWithUsername:result.responseObject[@"userName"] password:result.responseObject[@"passWord"] logined:result.success && [result.responseObject[@"code"] integerValue] == 0]]];
         
+    }];
+}
+
+//登出
+- (RACSignal *)logoutSignal{
+    
+    return [[self.service logoutSignal:self.userModel.userName passWord:self.userModel.passWord] map:^id _Nullable(WGResult *result) {
+        
+        //是否登录状态
+        self.userModel.logined = !(result.success && [result.responseObject[@"code"] integerValue] == 0);
+        
+        return [WGResultModel resultWithSuccess:result.success ? [result.responseObject[@"code"] integerValue] == 0 : result.success message:result.success ? result.responseObject[@"message"] : result.message dataModel:[WGUser userWithService:self.service userModel:[WGUserModel userModelWithUsername:result.responseObject[@"userName"] password:result.responseObject[@"passWord"] logined:!(result.success && [result.responseObject[@"code"] integerValue] == 0)]]];
     }];
 }
 
