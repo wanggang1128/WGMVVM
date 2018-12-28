@@ -1,0 +1,33 @@
+//
+//  WGServices.m
+//  WGMVVM
+//
+//  Created by wanggang on 2018/12/27.
+//  Copyright © 2018 wanggang. All rights reserved.
+//
+
+#import "WGServices.h"
+
+@implementation WGServices
+
+//登录
+- (RACSignal *)loginSignal:(NSString *)userName passWord:(NSString *)passWord{
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        
+        //调取后台登录接口
+        [NetworkingTool postWithPath:K_Service_Login parameters:@{@"userName": userName, @"passWord": passWord} completion:^(BOOL success, NSString *message, id responseObject){
+            
+            [subscriber sendNext:[WGResult resultWithSuccess:success message:message responseObject:responseObject]];
+            [subscriber sendCompleted];
+            
+        }];
+        
+        RACDisposable *disposable = [RACDisposable disposableWithBlock:^{
+            //完成后清理不需要的资源
+        }];
+        return disposable;
+    }];
+    return signal;
+}
+
+@end

@@ -24,7 +24,17 @@
 		32577F982170844600477C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F972170844600477C0A /* main.m */; };
 		32577FA22170844600477C0A /* WGMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FA12170844600477C0A /* WGMVVMTests.m */; };
 		32577FAD2170844600477C0A /* WGMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577FAC2170844600477C0A /* WGMVVMUITests.m */; };
+		325784AF21D4E543000E512A /* WGResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784AE21D4E543000E512A /* WGResultModel.m */; };
+		325784B221D4EA46000E512A /* WGNewLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784B121D4EA46000E512A /* WGNewLoginViewModel.m */; };
+		325784B721D4F104000E512A /* LoadingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784B521D4F104000E512A /* LoadingTool.m */; };
+		325784B821D4F104000E512A /* NetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784B621D4F104000E512A /* NetworkingTool.m */; };
+		325784BA21D5C0F9000E512A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 325784B921D5C0F9000E512A /* data.json */; };
 		326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */; };
+		326DA6A521D4BB3D004D00E8 /* WGNewLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */; };
+		326DA6AA21D4C747004D00E8 /* WGUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A921D4C747004D00E8 /* WGUserModel.m */; };
+		326DA6B221D4CC25004D00E8 /* WGServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B121D4CC25004D00E8 /* WGServices.m */; };
+		326DA6B521D4CCCB004D00E8 /* WGResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B421D4CCCB004D00E8 /* WGResult.m */; };
+		326DA6B821D4DD2F004D00E8 /* WGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B721D4DD2F004D00E8 /* WGUser.m */; };
 		32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5B1621A427DF0085FE61 /* WGFirstView.m */; };
 		576CE5D403FFE0E1198CE9D2 /* libPods-WGMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */; };
 /* End PBXBuildFile section */
@@ -82,8 +92,28 @@
 		32577FA82170844600477C0A /* WGMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32577FAC2170844600477C0A /* WGMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMVVMUITests.m; sourceTree = "<group>"; };
 		32577FAE2170844600477C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325784AD21D4E543000E512A /* WGResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGResultModel.h; sourceTree = "<group>"; };
+		325784AE21D4E543000E512A /* WGResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGResultModel.m; sourceTree = "<group>"; };
+		325784B021D4EA46000E512A /* WGNewLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNewLoginViewModel.h; sourceTree = "<group>"; };
+		325784B121D4EA46000E512A /* WGNewLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNewLoginViewModel.m; sourceTree = "<group>"; };
+		325784B321D4F103000E512A /* NetworkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingTool.h; sourceTree = "<group>"; };
+		325784B421D4F103000E512A /* LoadingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingTool.h; sourceTree = "<group>"; };
+		325784B521D4F104000E512A /* LoadingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingTool.m; sourceTree = "<group>"; };
+		325784B621D4F104000E512A /* NetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingTool.m; sourceTree = "<group>"; };
+		325784B921D5C0F9000E512A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginTwoViewController.h; sourceTree = "<group>"; };
 		326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLoginTwoViewController.m; sourceTree = "<group>"; };
+		326DA6A321D4BB3D004D00E8 /* WGNewLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNewLoginViewController.h; sourceTree = "<group>"; };
+		326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNewLoginViewController.m; sourceTree = "<group>"; };
+		326DA6A621D4BC31004D00E8 /* WGMVVM.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMVVM.pch; sourceTree = "<group>"; };
+		326DA6A821D4C747004D00E8 /* WGUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUserModel.h; sourceTree = "<group>"; };
+		326DA6A921D4C747004D00E8 /* WGUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUserModel.m; sourceTree = "<group>"; };
+		326DA6B021D4CC25004D00E8 /* WGServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGServices.h; sourceTree = "<group>"; };
+		326DA6B121D4CC25004D00E8 /* WGServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGServices.m; sourceTree = "<group>"; };
+		326DA6B321D4CCCB004D00E8 /* WGResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGResult.h; sourceTree = "<group>"; };
+		326DA6B421D4CCCB004D00E8 /* WGResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGResult.m; sourceTree = "<group>"; };
+		326DA6B621D4DD2F004D00E8 /* WGUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUser.h; sourceTree = "<group>"; };
+		326DA6B721D4DD2F004D00E8 /* WGUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUser.m; sourceTree = "<group>"; };
 		32EE5B1521A427DF0085FE61 /* WGFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstView.h; sourceTree = "<group>"; };
 		32EE5B1621A427DF0085FE61 /* WGFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstView.m; sourceTree = "<group>"; };
 		8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +156,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		321B54BE21A2D14E004225B6 /* File01 */ = {
+		321B54BE21A2D14E004225B6 /* demo01 */ = {
 			isa = PBXGroup;
 			children = (
 				321B54BF21A2D173004225B6 /* WGFirstViewController.h */,
@@ -138,7 +168,7 @@
 				32EE5B1521A427DF0085FE61 /* WGFirstView.h */,
 				32EE5B1621A427DF0085FE61 /* WGFirstView.m */,
 			);
-			path = File01;
+			path = demo01;
 			sourceTree = "<group>";
 		};
 		3233104121CA3C010067256F /* RACLearn */ = {
@@ -192,21 +222,24 @@
 		32577F872170844400477C0A /* WGMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				326DA6A221D4A4F4004D00E8 /* Demo02 */,
 				3233104821CCD83B0067256F /* LoginFile */,
 				3233104121CA3C010067256F /* RACLearn */,
-				321B54BE21A2D14E004225B6 /* File01 */,
+				321B54BE21A2D14E004225B6 /* demo01 */,
 				32577F882170844400477C0A /* AppDelegate.h */,
 				32577F892170844400477C0A /* AppDelegate.m */,
 				32577F8B2170844400477C0A /* ViewController.h */,
 				32577F8C2170844400477C0A /* ViewController.m */,
 				321B54C221A2D1A0004225B6 /* WGBaseViewModel.h */,
 				321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */,
+				326DA6A621D4BC31004D00E8 /* WGMVVM.pch */,
 				3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */,
 				3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */,
 				32577F912170844600477C0A /* Assets.xcassets */,
 				32577F932170844600477C0A /* LaunchScreen.storyboard */,
 				32577F962170844600477C0A /* Info.plist */,
 				32577F972170844600477C0A /* main.m */,
+				325784B921D5C0F9000E512A /* data.json */,
 			);
 			path = WGMVVM;
 			sourceTree = "<group>";
@@ -229,6 +262,71 @@
 			path = WGMVVMUITests;
 			sourceTree = "<group>";
 		};
+		326DA6A221D4A4F4004D00E8 /* Demo02 */ = {
+			isa = PBXGroup;
+			children = (
+				326DA6AF21D4CBC7004D00E8 /* Tools */,
+				326DA6AE21D4CBB3004D00E8 /* ViewModels */,
+				326DA6AD21D4CBAC004D00E8 /* Views */,
+				326DA6AB21D4CAC9004D00E8 /* Models */,
+				326DA6AC21D4CAF3004D00E8 /* Controllers */,
+			);
+			path = Demo02;
+			sourceTree = "<group>";
+		};
+		326DA6AB21D4CAC9004D00E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				326DA6B021D4CC25004D00E8 /* WGServices.h */,
+				326DA6B121D4CC25004D00E8 /* WGServices.m */,
+				326DA6B321D4CCCB004D00E8 /* WGResult.h */,
+				326DA6B421D4CCCB004D00E8 /* WGResult.m */,
+				325784AD21D4E543000E512A /* WGResultModel.h */,
+				325784AE21D4E543000E512A /* WGResultModel.m */,
+				326DA6A821D4C747004D00E8 /* WGUserModel.h */,
+				326DA6A921D4C747004D00E8 /* WGUserModel.m */,
+				326DA6B621D4DD2F004D00E8 /* WGUser.h */,
+				326DA6B721D4DD2F004D00E8 /* WGUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		326DA6AC21D4CAF3004D00E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				326DA6A321D4BB3D004D00E8 /* WGNewLoginViewController.h */,
+				326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		326DA6AD21D4CBAC004D00E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		326DA6AE21D4CBB3004D00E8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				325784B021D4EA46000E512A /* WGNewLoginViewModel.h */,
+				325784B121D4EA46000E512A /* WGNewLoginViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		326DA6AF21D4CBC7004D00E8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				325784B421D4F103000E512A /* LoadingTool.h */,
+				325784B521D4F104000E512A /* LoadingTool.m */,
+				325784B321D4F103000E512A /* NetworkingTool.h */,
+				325784B621D4F104000E512A /* NetworkingTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		F9F3D6B343CD00A3C5C51165 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +346,7 @@
 				32577F812170844400477C0A /* Sources */,
 				32577F822170844400477C0A /* Frameworks */,
 				32577F832170844400477C0A /* Resources */,
+				4CF67B9B5C8A45386A43A6BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +399,7 @@
 		32577F7D2170844400477C0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WG;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = wanggang;
 				TargetAttributes = {
@@ -342,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32577F952170844600477C0A /* LaunchScreen.storyboard in Resources */,
+				325784BA21D5C0F9000E512A /* data.json in Resources */,
 				32577F922170844600477C0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +464,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4CF67B9B5C8A45386A43A6BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WGMVVM/Pods-WGMVVM-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WGMVVM/Pods-WGMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C2572C7F598992BAFD2B741A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,15 +516,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				321B54C721A2D1CA004225B6 /* WGFirstModel.m in Sources */,
+				326DA6B221D4CC25004D00E8 /* WGServices.m in Sources */,
 				32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */,
+				325784B221D4EA46000E512A /* WGNewLoginViewModel.m in Sources */,
 				3233105121CCDC210067256F /* LoginViewModel.m in Sources */,
+				326DA6B821D4DD2F004D00E8 /* WGUser.m in Sources */,
 				3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */,
+				325784AF21D4E543000E512A /* WGResultModel.m in Sources */,
+				325784B721D4F104000E512A /* LoadingTool.m in Sources */,
+				325784B821D4F104000E512A /* NetworkingTool.m in Sources */,
 				3233104E21CCDBDB0067256F /* AccountModel.m in Sources */,
+				326DA6A521D4BB3D004D00E8 /* WGNewLoginViewController.m in Sources */,
 				32577F8D2170844400477C0A /* ViewController.m in Sources */,
+				326DA6AA21D4C747004D00E8 /* WGUserModel.m in Sources */,
 				321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */,
 				3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */,
 				32577F982170844600477C0A /* main.m in Sources */,
 				326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */,
+				326DA6B521D4CCCB004D00E8 /* WGResult.m in Sources */,
 				32577F8A2170844400477C0A /* AppDelegate.m in Sources */,
 				321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */,
 				3233104421CA3C240067256F /* WGRACViewController.m in Sources */,
@@ -572,7 +704,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49T87S5RLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WGMVVM/WGMVVM.pch;
 				INFOPLIST_FILE = WGMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +725,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49T87S5RLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WGMVVM/WGMVVM.pch;
 				INFOPLIST_FILE = WGMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

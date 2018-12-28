@@ -7,7 +7,25 @@
 		<key>WGMVVM.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>32577F842170844400477C0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32577F9C2170844600477C0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32577FA72170844600477C0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

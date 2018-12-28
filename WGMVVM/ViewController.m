@@ -7,10 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "WGFirstViewController.h"
-#import "WGRACViewController.h"
-#import "WGLoginViewController.h"
-
+#import "WGNewLoginViewModel.h"
+#import "WGNewLoginViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -49,16 +47,27 @@
     
     switch (indexPath.row) {
         case 0:{
-            WGFirstViewController *vc = [[WGFirstViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGFirstViewController"];
             break;
         }case 1:{
-            WGRACViewController *vc = [[WGRACViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGRACViewController"];
+            
             break;
         }case 2:{
-            WGLoginViewController *vc = [[WGLoginViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+            
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGLoginViewController"];
+            break;
+        }
+        case 3:{
+            
+//            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGNewLoginViewController"];
+            
+            WGNewLoginViewModel *loginViewModel = [WGNewLoginViewModel loginViewModelWithUser:[WGUser userWithService:[[WGServices alloc] init] userModel:[WGUserModel userModelWithUsername:@"Jiuchabaikaishui" password:@"123456" logined:NO]]];
+            WGNewLoginViewController *loginC = [[WGNewLoginViewController alloc] initWithLoginViewModel:loginViewModel];
+            [self.navigationController pushViewController:loginC animated:NO];
+            
             break;
         }
         default:
@@ -68,7 +77,7 @@
 
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
-        _dataArray = [[NSMutableArray alloc] initWithObjects:@"File01", @"RACLearn",@"LoginFile", nil];
+        _dataArray = [[NSMutableArray alloc] initWithObjects:@"Demo01", @"RACLearn",@"LoginFile", @"Demo02", nil];
     }
     return _dataArray;
 }

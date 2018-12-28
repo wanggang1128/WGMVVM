@@ -6,16 +6,10 @@
 //  Copyright © 2018 wanggang. All rights reserved.
 //
 
-//当前窗口的高度 宽度
-#define SCREEN_Height [[UIScreen mainScreen] bounds].size.height
-#define SCREEN_Width  [[UIScreen mainScreen] bounds].size.width
-
 #import "WGLoginViewController.h"
 #import "WGLoginTwoViewController.h"
 #import "LoginViewModel.h"
-#import <ReactiveObjC.h>
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+ShowMessage.h"
+
 
 @interface WGLoginViewController ()
 
