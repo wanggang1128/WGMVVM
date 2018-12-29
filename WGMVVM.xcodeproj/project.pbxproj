@@ -16,7 +16,6 @@
 		3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104A21CCD9C00067256F /* WGLoginViewController.m */; };
 		3233104E21CCDBDB0067256F /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233104D21CCDBDB0067256F /* AccountModel.m */; };
 		3233105121CCDC210067256F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105021CCDC210067256F /* LoginViewModel.m */; };
-		3233105421CCE7830067256F /* MBProgressHUD+ShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */; };
 		3251257921D6083300B0888A /* WGHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251257821D6083300B0888A /* WGHomeViewModel.m */; };
 		3251257C21D6146100B0888A /* WGHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251257B21D6146100B0888A /* WGHomeModel.m */; };
 		32577F8A2170844400477C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32577F892170844400477C0A /* AppDelegate.m */; };
@@ -37,6 +36,9 @@
 		326DA6B221D4CC25004D00E8 /* WGServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B121D4CC25004D00E8 /* WGServices.m */; };
 		326DA6B521D4CCCB004D00E8 /* WGResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B421D4CCCB004D00E8 /* WGResult.m */; };
 		326DA6B821D4DD2F004D00E8 /* WGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B721D4DD2F004D00E8 /* WGUser.m */; };
+		32B97F8221D73B7C00D01C9B /* WGFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B97F8121D73B7C00D01C9B /* WGFriendModel.m */; };
+		32B97F8521D74C3100D01C9B /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B97F8321D74C3100D01C9B /* FriendTableViewCell.m */; };
+		32B97F8B21D74D0200D01C9B /* WGFriendCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B97F8A21D74D0200D01C9B /* WGFriendCellViewModel.m */; };
 		32EE5B1721A427DF0085FE61 /* WGFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE5B1621A427DF0085FE61 /* WGFirstView.m */; };
 		576CE5D403FFE0E1198CE9D2 /* libPods-WGMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */; };
 /* End PBXBuildFile section */
@@ -77,8 +79,6 @@
 		3233104D21CCDBDB0067256F /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		3233104F21CCDC210067256F /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		3233105021CCDC210067256F /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
-		3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowMessage.h"; sourceTree = "<group>"; };
-		3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowMessage.m"; sourceTree = "<group>"; };
 		3251257721D6083300B0888A /* WGHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHomeViewModel.h; sourceTree = "<group>"; };
 		3251257821D6083300B0888A /* WGHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHomeViewModel.m; sourceTree = "<group>"; };
 		3251257A21D6146100B0888A /* WGHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHomeModel.h; sourceTree = "<group>"; };
@@ -120,6 +120,12 @@
 		326DA6B421D4CCCB004D00E8 /* WGResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGResult.m; sourceTree = "<group>"; };
 		326DA6B621D4DD2F004D00E8 /* WGUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUser.h; sourceTree = "<group>"; };
 		326DA6B721D4DD2F004D00E8 /* WGUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUser.m; sourceTree = "<group>"; };
+		32B97F8021D73B7C00D01C9B /* WGFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFriendModel.h; sourceTree = "<group>"; };
+		32B97F8121D73B7C00D01C9B /* WGFriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFriendModel.m; sourceTree = "<group>"; };
+		32B97F8321D74C3100D01C9B /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewCell.m; sourceTree = "<group>"; };
+		32B97F8421D74C3100D01C9B /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTableViewCell.h; sourceTree = "<group>"; };
+		32B97F8921D74D0200D01C9B /* WGFriendCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFriendCellViewModel.h; sourceTree = "<group>"; };
+		32B97F8A21D74D0200D01C9B /* WGFriendCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFriendCellViewModel.m; sourceTree = "<group>"; };
 		32EE5B1521A427DF0085FE61 /* WGFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFirstView.h; sourceTree = "<group>"; };
 		32EE5B1621A427DF0085FE61 /* WGFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFirstView.m; sourceTree = "<group>"; };
 		8E69F99D4FD9A87664433CE1 /* libPods-WGMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,8 +243,6 @@
 				321B54C221A2D1A0004225B6 /* WGBaseViewModel.h */,
 				321B54C321A2D1A0004225B6 /* WGBaseViewModel.m */,
 				326DA6A621D4BC31004D00E8 /* WGMVVM.pch */,
-				3233105221CCE7830067256F /* MBProgressHUD+ShowMessage.h */,
-				3233105321CCE7830067256F /* MBProgressHUD+ShowMessage.m */,
 				32577F912170844600477C0A /* Assets.xcassets */,
 				32577F932170844600477C0A /* LaunchScreen.storyboard */,
 				32577F962170844600477C0A /* Info.plist */,
@@ -293,6 +297,8 @@
 				326DA6B721D4DD2F004D00E8 /* WGUser.m */,
 				3251257A21D6146100B0888A /* WGHomeModel.h */,
 				3251257B21D6146100B0888A /* WGHomeModel.m */,
+				32B97F8021D73B7C00D01C9B /* WGFriendModel.h */,
+				32B97F8121D73B7C00D01C9B /* WGFriendModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,6 +317,8 @@
 		326DA6AD21D4CBAC004D00E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32B97F8421D74C3100D01C9B /* FriendTableViewCell.h */,
+				32B97F8321D74C3100D01C9B /* FriendTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 				325784B121D4EA46000E512A /* WGNewLoginViewModel.m */,
 				3251257721D6083300B0888A /* WGHomeViewModel.h */,
 				3251257821D6083300B0888A /* WGHomeViewModel.m */,
+				32B97F8921D74D0200D01C9B /* WGFriendCellViewModel.h */,
+				32B97F8A21D74D0200D01C9B /* WGFriendCellViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -533,9 +543,11 @@
 				3233105121CCDC210067256F /* LoginViewModel.m in Sources */,
 				326DA6B821D4DD2F004D00E8 /* WGUser.m in Sources */,
 				3251257921D6083300B0888A /* WGHomeViewModel.m in Sources */,
+				32B97F8B21D74D0200D01C9B /* WGFriendCellViewModel.m in Sources */,
 				3233104B21CCD9C00067256F /* WGLoginViewController.m in Sources */,
 				325784AF21D4E543000E512A /* WGResultModel.m in Sources */,
 				325784B721D4F104000E512A /* LoadingTool.m in Sources */,
+				32B97F8221D73B7C00D01C9B /* WGFriendModel.m in Sources */,
 				325784B821D4F104000E512A /* NetworkingTool.m in Sources */,
 				3233104E21CCDBDB0067256F /* AccountModel.m in Sources */,
 				326DA6A521D4BB3D004D00E8 /* WGNewLoginViewController.m in Sources */,
@@ -543,13 +555,13 @@
 				326DA6AA21D4C747004D00E8 /* WGUserModel.m in Sources */,
 				321B54C421A2D1A0004225B6 /* WGBaseViewModel.m in Sources */,
 				3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */,
+				32B97F8521D74C3100D01C9B /* FriendTableViewCell.m in Sources */,
 				32577F982170844600477C0A /* main.m in Sources */,
 				326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */,
 				326DA6B521D4CCCB004D00E8 /* WGResult.m in Sources */,
 				32577F8A2170844400477C0A /* AppDelegate.m in Sources */,
 				321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */,
 				3233104421CA3C240067256F /* WGRACViewController.m in Sources */,
-				3233105421CCE7830067256F /* MBProgressHUD+ShowMessage.m in Sources */,
 				321B54C121A2D173004225B6 /* WGFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,4 +50,35 @@
     }];
 }
 
+//朋友列表
+- (RACSignal *)friendSignalWithPage:(NSInteger)page andCount:(NSInteger)count{
+    
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        
+        //调后台接口
+        [NetworkingTool postWithPath:K_Service_PageFriends parameters:@{@"page": @(page), @"count": @(count)} completion:^(BOOL success, NSString *message, id responseObject) {
+            
+            [subscriber sendNext:[WGResult resultWithSuccess:success message:message responseObject:responseObject]];
+            [subscriber sendCompleted];
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{
+            //完成后清理不需要的资源
+        }];
+    }];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

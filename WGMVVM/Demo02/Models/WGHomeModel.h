@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)homeWithWGUser:(WGUser *)user;
 - (instancetype)initWithWGUser:(WGUser *)user;
 
+- (RACSignal *)friendSignalWithPage:(NSInteger)page count:(NSInteger)count;
+
 @end
 
 NS_ASSUME_NONNULL_END

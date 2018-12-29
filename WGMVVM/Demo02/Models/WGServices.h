@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 //登出
 - (RACSignal *)logoutSignal:(NSString *)userName passWord:(NSString *)passWord;
 
+//朋友列表
+- (RACSignal *)friendSignalWithPage:(NSInteger)page andCount:(NSInteger)count;
+
 @end
 
 NS_ASSUME_NONNULL_END

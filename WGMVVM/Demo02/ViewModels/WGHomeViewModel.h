@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "WGHomeModel.h"
+#import "WGFriendModel.h"
+#import "WGFriendCellViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,8 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) WGHomeModel *homeModel;
 @property (nonatomic, strong) RACCommand *logoutCommand;
 
+//标题
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, assign) NSInteger page;
+@property (nonatomic, assign) NSInteger pageCount;
+
+@property (nonatomic, strong) NSArray<WGFriendCellViewModel *> *dataArray;
+
+
 + (instancetype)homeViewModelWithHomeModel:(WGHomeModel *)homeModel;
 - (instancetype)initWithHomeModel:(WGHomeModel *)homeModel;
+
+- (RACSignal *)pageSignal:(BOOL)isFirst;
 
 @end
 

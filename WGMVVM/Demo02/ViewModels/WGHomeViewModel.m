@@ -20,6 +20,9 @@
     self = [super init];
     if (self) {
         
+        self.title = @"首页";
+        self.page = 0;
+        self.pageCount = 20;
         self.homeModel = homeModel;
         
         self.logoutCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
@@ -28,6 +31,27 @@
         }];
     }
     return self;
+}
+
+-(RACSignal *)pageSignal:(BOOL)isFirst{
+    
+    return [[[self.homeModel friendSignalWithPage:isFirst?0:self.page count:self.pageCount] map:^id _Nullable(WGResultModel *model) {
+        
+        return [WGResultModel resultWithSuccess:model.success message:model.message dataModel:[model.dataModel linq_select:^id(id item) {
+            //转换为WGFriendCellViewModel数据
+            return [WGFriendCellViewModel friendCellViewModel:item];
+        }]];
+    }] doNext:^(WGResultModel *model) {
+        if (isFirst) {
+            self.dataArray = model.dataModel;
+            self.page = 1;
+        } else {
+            NSMutableArray *mArr = [NSMutableArray arrayWithArray:self.dataArray];
+            [mArr addObjectsFromArray:model.dataModel];
+            self.dataArray = [NSArray arrayWithArray:mArr];
+            self.page++;
+        }
+    }];
 }
 
 @end
