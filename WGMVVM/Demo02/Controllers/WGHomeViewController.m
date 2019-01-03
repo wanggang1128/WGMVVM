@@ -1,16 +1,16 @@
 //
-//  WGLoginTwoViewController.m
+//  WGMainViewController.m
 //  WGMVVM
 //
 //  Created by wanggang on 2018/12/27.
 //  Copyright © 2018 wanggang. All rights reserved.
 //
 
-#import "WGLoginTwoViewController.h"
+#import "WGHomeViewController.h"
 #import "WGHomeViewModel.h"
 #import "FriendTableViewCell.h"
 
-@interface WGLoginTwoViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface WGHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIButton *leftButton;
 @property (nonatomic, strong) WGHomeViewModel *viewModel;
@@ -19,12 +19,12 @@
 
 @end
 
-@implementation WGLoginTwoViewController
+@implementation WGHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"WGLoginTwoViewController";
+    self.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self createView];

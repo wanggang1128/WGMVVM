@@ -29,6 +29,15 @@
             return @(self.user.validOfUserName);
         }] distinctUntilChanged];
         
+        [validUS subscribeNext:^(id  _Nullable x) {
+            BOOL isYes = [x boolValue];
+            if (isYes) {
+                //可点击
+            }else{
+                //不可点击
+            }
+        }];
+        
         RACSignal *validPS = [[RACObserve(self.user.userModel, passWord) map:^id _Nullable(id  _Nullable value) {
             @strongify(self);
             return @(self.user.validOfPassWord);

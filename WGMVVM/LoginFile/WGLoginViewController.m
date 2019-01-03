@@ -7,7 +7,6 @@
 //
 
 #import "WGLoginViewController.h"
-#import "WGLoginTwoViewController.h"
 #import "LoginViewModel.h"
 
 
@@ -58,13 +57,13 @@
             
             // 正在登录...
             // 用蒙版提示
-            [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+            [LoadingTool showTo:self.view];
         }else
         {
             // 登录完成
             // 隐藏蒙版
             
-            [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
+            [LoadingTool hideFrom:self.view];
         }
     }];
     
@@ -76,10 +75,8 @@
         
         if ([x isEqualToString:@"登录成功"]) {
             
-            WGLoginTwoViewController *vc = [[WGLoginTwoViewController alloc] init];
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-            [[UIApplication sharedApplication] delegate].window.rootViewController = nav;
-            [[UIApplication sharedApplication].delegate.window makeKeyWindow];
+            [LoadingTool showMessage:@"登录成功" toView:[UIApplication sharedApplication].keyWindow];
+
             
         }else{
             

@@ -80,7 +80,7 @@
 
         if (model.success) {
 
-            UIViewController *vc = [[WGControllerPush WGControllerPushShare] getViewControllerWithConName:@"WGLoginTwoViewController" paramType:WGPushProperty param:@{@"property":@{@"user":self.viewModel.user}}];
+            UIViewController *vc = [[WGControllerPush WGControllerPushShare] getViewControllerWithConName:@"WGHomeViewController" paramType:WGPushProperty param:@{@"property":@{@"user":self.viewModel.user}}];
             [UIApplication sharedApplication].delegate.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
             [[UIApplication sharedApplication].delegate.window makeKeyWindow];
         } else {

@@ -1,5 +1,5 @@
 //
-//  WGLoginTwoViewController.h
+//  WGHomeViewController.h
 //  WGMVVM
 //
 //  Created by wanggang on 2018/12/27.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGLoginTwoViewController : UIViewController
+@interface WGHomeViewController : UIViewController
 
 @property (nonatomic, strong) WGUser *user;
 

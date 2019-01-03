@@ -30,7 +30,7 @@
 		325784B721D4F104000E512A /* LoadingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784B521D4F104000E512A /* LoadingTool.m */; };
 		325784B821D4F104000E512A /* NetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 325784B621D4F104000E512A /* NetworkingTool.m */; };
 		325784BA21D5C0F9000E512A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 325784B921D5C0F9000E512A /* data.json */; };
-		326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */; };
+		326DA6A121D47660004D00E8 /* WGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A021D47660004D00E8 /* WGHomeViewController.m */; };
 		326DA6A521D4BB3D004D00E8 /* WGNewLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */; };
 		326DA6AA21D4C747004D00E8 /* WGUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6A921D4C747004D00E8 /* WGUserModel.m */; };
 		326DA6B221D4CC25004D00E8 /* WGServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 326DA6B121D4CC25004D00E8 /* WGServices.m */; };
@@ -107,8 +107,8 @@
 		325784B521D4F104000E512A /* LoadingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingTool.m; sourceTree = "<group>"; };
 		325784B621D4F104000E512A /* NetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingTool.m; sourceTree = "<group>"; };
 		325784B921D5C0F9000E512A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginTwoViewController.h; sourceTree = "<group>"; };
-		326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLoginTwoViewController.m; sourceTree = "<group>"; };
+		326DA69F21D47660004D00E8 /* WGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHomeViewController.h; sourceTree = "<group>"; };
+		326DA6A021D47660004D00E8 /* WGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHomeViewController.m; sourceTree = "<group>"; };
 		326DA6A321D4BB3D004D00E8 /* WGNewLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNewLoginViewController.h; sourceTree = "<group>"; };
 		326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNewLoginViewController.m; sourceTree = "<group>"; };
 		326DA6A621D4BC31004D00E8 /* WGMVVM.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMVVM.pch; sourceTree = "<group>"; };
@@ -308,8 +308,8 @@
 			children = (
 				326DA6A321D4BB3D004D00E8 /* WGNewLoginViewController.h */,
 				326DA6A421D4BB3D004D00E8 /* WGNewLoginViewController.m */,
-				326DA69F21D47660004D00E8 /* WGLoginTwoViewController.h */,
-				326DA6A021D47660004D00E8 /* WGLoginTwoViewController.m */,
+				326DA69F21D47660004D00E8 /* WGHomeViewController.h */,
+				326DA6A021D47660004D00E8 /* WGHomeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 				3233104721CA44570067256F /* WGRACTwoViewController.m in Sources */,
 				32B97F8521D74C3100D01C9B /* FriendTableViewCell.m in Sources */,
 				32577F982170844600477C0A /* main.m in Sources */,
-				326DA6A121D47660004D00E8 /* WGLoginTwoViewController.m in Sources */,
+				326DA6A121D47660004D00E8 /* WGHomeViewController.m in Sources */,
 				326DA6B521D4CCCB004D00E8 /* WGResult.m in Sources */,
 				32577F8A2170844400477C0A /* AppDelegate.m in Sources */,
 				321B54CA21A2D1E4004225B6 /* WGFirstViewModel.m in Sources */,
